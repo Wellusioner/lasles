@@ -1,1 +1,1 @@
-# Lasles VPN
+# LaslesVPN - Landing page
