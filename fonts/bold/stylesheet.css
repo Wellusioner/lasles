@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/bold/Rubik-Bold.eot');
+    src: url('fonts/bold/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/bold/Rubik-Bold.woff2') format('woff2'),
+        url('fonts/bold/Rubik-Bold.woff') format('woff'),
+        url('fonts/bold/Rubik-Bold.ttf') format('truetype'),
+        url('fonts/bold/Rubik-Bold.svg#Rubik-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
