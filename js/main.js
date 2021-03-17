@@ -63,14 +63,24 @@ headerBtns.forEach(function(btn){
   });
 });
 
-//const feedbackSlider = new Swiper('.feedback-slider', {
-//  spaceBetween: 120,
-//  pagination: {
-//    el: '.feedback-section .swiper-pagination',
-//    clickable: true
-//  },
-//  navigation: {
-//    prevEl: '.feedback-navigation .prev-button',
-//    nextEl: '.feedback-navigation .next-button',
-//  }
-//});
+const feedbackSlider = new Swiper('.feedback-slider', {
+  spaceBetween: 20,
+  slidesPerView: 2.5,
+  pagination: {
+    el: '.feedback-control .swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    prevEl: '.feedback-control .feedback-prev',
+    nextEl: '.feedback-control .feedback-next',
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 1
+    },
+    991: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    }
+  }
+});

@@ -13,22 +13,22 @@
       <div class="container">
         <div class="header-group d-flex align-items-center justify-content-between">
           <a href="#!"><img src="./images/logo.svg" alt=""></a>
-          <nav class="d-md-flex">
-            <a class="menu-link d-block active" href="#!">About</a>
-            <a class="menu-link d-block" href="#!">Features</a>
-            <a class="menu-link d-block" href="#!">Pricing</a>
-            <a class="menu-link d-block" href="#!">Testimonals</a>
-            <a class="menu-link d-block" href="#!">Help</a>
-            <span class="close-menu d-block d-md-none">&times;</span>
+          <nav class="d-lg-flex">
+            <a class="menu-link d-block active" href="#about">About</a>
+            <a class="menu-link d-block" href="#feature">Features</a>
+            <a class="menu-link d-block" href="#plan">Pricing</a>
+            <a class="menu-link d-block" href="#feedback">Testimonals</a>
+<!--            <a class="menu-link d-block" href="#help">Help</a>-->
+            <span class="close-menu d-block d-lg-none">&times;</span>
           </nav>
-          <div>
+          <div class="d-flex align-items-center">
             <div class="d-flex align-items-center">
               <a href="#!">Sign in</a>
               <a class="button-default button-sm button-outlined button-circle button-animated ms-3" href="#!">Sign up</a>
             </div>
-            <div class="hamburger d-md-none d-block ms-3"></div>
+            <div class="hamburger d-lg-none d-block ms-3"></div>
           </div>
-          <div class="header-mask d-md-none d-block"></div>
+          <div class="header-mask d-lg-none d-block"></div>
         </div>
       </div>
     </header>
@@ -45,12 +45,12 @@
         </div>
       </div>
     </div>
-    <div id="about" class="about-section section-pb">
+    <div id="about" class="about-section section">
       <div class="container">
        <div class="about-group">
         <div class="row">
-          <div class="col-sm-4">
-            <div class="about-item">
+          <div class="col-md-4">
+            <div class="about-item d-flex align-items-center justify-content-md-center">
               <div class="about-icon"><img src="./images/icon1.svg" alt=""></div>
               <div class="about-info">
                 <span class="about-number fw-700">90+</span>
@@ -58,8 +58,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="about-item">
+          <div class="col-md-4">
+            <div class="about-item d-flex align-items-center justify-content-md-center">
               <div class="about-icon"><img src="./images/icon2.svg" alt=""></div>
               <div class="about-info">
                 <span class="about-number fw-700">30+</span>
@@ -67,8 +67,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="about-item">
+          <div class="col-md-4">
+            <div class="about-item d-flex align-items-center justify-content-md-center">
               <div class="about-icon"><img src="./images/icon3.svg" alt=""></div>
               <div class="about-info">
                 <span class="about-number fw-700">50+</span>
@@ -80,8 +80,7 @@
        </div>
       </div>
     </div>
-    
-    <div class="section feature-section section-py">
+    <div id="feature" class="feature-section section">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -104,51 +103,246 @@
         </div>
       </div>
     </div>
-    <div class="section price-section section-py">
+    <div id="plan" class="plan-section section">
       <div class="container">
-        <div class="price-title title title-center">Choose Your Plan</div>
-        <p class="price-text title-text">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+        <div class="plan-title title title-center">Choose Your Plan</div>
+        <p class="plan-text title-text">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
         
-        <div class="row">
+        <div class="row gy-4">
           <div class="col-md-4">
-            <div class="price-item">
-              <div class="price-image mb-2"><img src="./images/salyut.svg" alt=""></div>
+            <div class="plan-item">
+              <div class="plan-image mb-4"><img src="./images/salyut.svg" alt=""></div>
               <div class="fw-500 text-center">Free Plan</div>
-              <ul class="price-list flex-1">
+              <ul class="plan-list flex-1">
                 <li>Unlimited Bandwitch</li>
                 <li>Encrypted Connection</li>
                 <li>No Traffic Logs</li>
                 <li>Works on All Devices</li>
               </ul>
               <div>
-                <span class="d-block text-center mb-2 fw-500">Free</span>
+                <div class="plan-price d-block text-center mb-2 fw-500"><span class="fw-700">Free</span></div>
                 <a class="button-default button-outlined button-sm button-circle button-hover" href="#!">Select</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="price-item">
-              <div class="price-image mb-2"><img src="./images/salyut.svg" alt=""></div>
-              <div class="fw-500 text-center">Free Plan</div>
-              <ul class="price-list flex-1">
+            <div class="plan-item">
+              <div class="plan-image mb-4"><img src="./images/salyut.svg" alt=""></div>
+              <div class="fw-500 text-center">Standart Plan</div>
+              <ul class="plan-list flex-1">
                 <li>Unlimited Bandwitch</li>
                 <li>Encrypted Connection</li>
-                <li>No Traffic Logs</li>
+                <li>Yes Traffic Logs</li>
                 <li>Works on All Devices</li>
-                <li>Works on All Devices</li>
-                <li>Works on All Devices</li>
+                <li>Connect Anyware</li>
               </ul>
               <div>
-                <span class="d-block text-center mb-2 fw-500">Free</span>
+                <div class="plan-price d-block text-center mb-2 fw-500">
+                  <span class="fw-700">$9</span> / mo
+                </div>
+                <a class="button-default button-outlined button-sm button-circle button-hover" href="#!">Select</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="plan-item">
+              <div class="plan-image mb-4"><img src="./images/salyut.svg" alt=""></div>
+              <div class="fw-500 text-center">Premium Plan</div>
+              <ul class="plan-list flex-1">
+                <li>Unlimited Bandwitch</li>
+                <li>Encrypted Connection</li>
+                <li>Yes Traffic Logs</li>
+                <li>Works on All Devices</li>
+                <li>Connect Anyware</li>
+                <li>Get New Features</li>
+              </ul>
+              <div>
+                <div class="plan-price d-block text-center mb-2 fw-500">
+                  <span>$12</span>
+                  / mo
+                </div>
                 <a class="button-default button-outlined button-sm button-circle button-hover" href="#!">Select</a>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
-    
+    <div id="map" class="map-section section-py">
+      <div class="container">
+        <div class="map-title title title-center">Huge Global Network of Fast VPN</div>
+        <div class="title-text title-text-center text-secondary">
+          See <span>LaslesVPN</span> everywhere to make it easier for you when you move locations.
+        </div>
+        <div class="map-area pt-5">
+          <img class="w-100" src="./images/map.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="feedback" class="feedback-section section">
+      <div class="container">
+        <div class="feedback-title title title-center">
+          Trusted by Thousands of Happy Customer
+        </div>
+        <div class="feedback-text-title title-text">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</div>
+        <div class="feedback-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="feedback-item swiper-slide">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="feedback-user d-flex align-items-center">
+                  <div class="feedback-image me-2 has-bg" style="background-image: url('./images/user.jpg')"></div>
+                  <div class="feedback-user-info">
+                    <span class="d-block mb-1 fw-700">Viezh Robert</span>
+                    <p>Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div class="feedback-rate">
+                  4.5
+                  <img src="./images/star.svg" alt=""> 
+                </div>
+              </div>
+              <p class="feedback-text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+            </div>
+            <div class="feedback-item swiper-slide">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="feedback-user d-flex align-items-center">
+                  <div class="feedback-image me-2 has-bg" style="background-image: url('./images/user.jpg')"></div>
+                  <div class="feedback-user-info">
+                    <span class="d-block mb-1 fw-700">Viezh Robert</span>
+                    <p>Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div class="feedback-rate">
+                  4.5
+                  <img src="./images/star.svg" alt=""> 
+                </div>
+              </div>
+              <p class="feedback-text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+            </div>
+            <div class="feedback-item swiper-slide">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="feedback-user d-flex align-items-center">
+                  <div class="feedback-image me-2 has-bg" style="background-image: url('./images/user.jpg')"></div>
+                  <div class="feedback-user-info">
+                    <span class="d-block mb-1 fw-700">Viezh Robert</span>
+                    <p>Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div class="feedback-rate">
+                  4.5
+                  <img src="./images/star.svg" alt=""> 
+                </div>
+              </div>
+              <p class="feedback-text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+            </div>
+            <div class="feedback-item swiper-slide">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="feedback-user d-flex align-items-center">
+                  <div class="feedback-image me-2 has-bg" style="background-image: url('./images/user.jpg')"></div>
+                  <div class="feedback-user-info">
+                    <span class="d-block mb-1 fw-700">Viezh Robert</span>
+                    <p>Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div class="feedback-rate">
+                  4.5
+                  <img src="./images/star.svg" alt=""> 
+                </div>
+              </div>
+              <p class="feedback-text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+            </div>
+            <div class="feedback-item swiper-slide">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="feedback-user d-flex align-items-center">
+                  <div class="feedback-image me-2 has-bg" style="background-image: url('./images/user.jpg')"></div>
+                  <div class="feedback-user-info">
+                    <span class="d-block mb-1 fw-700">Viezh Robert</span>
+                    <p>Warsaw, Poland</p>
+                  </div>
+                </div>
+                <div class="feedback-rate">
+                  4.5
+                  <img src="./images/star.svg" alt=""> 
+                </div>
+              </div>
+              <p class="feedback-text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-control d-flex justify-content-between align-items-center w-100">
+          <div class="swiper-pagination"></div>
+          <div class="d-flex">
+            <div class="feedback-navigation feedback-prev"></div>
+            <div class="feedback-navigation feedback-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer section">
+     <div class="footer-form-wrapper">
+        <div class="container">
+          <form class="footer-form">
+           <div class="d-flex flex-wrap justify-content-between align-items-center gy-4">
+             <div class="mb-sm-0 mb-4">
+               <div class="title title-left">
+                 Subscribe now <br>
+                 Get special features!
+               </div>
+               <p class="title-text title-text-left">Let's subscribe with us and find the fun</p>
+             </div>
+             <div class="">
+               <button type="button" class="button-default button-rounded button-shadow button-hover">Subscribe now</button>
+             </div>
+           </div>
+         </form>
+        </div>
+       </div>
+      <div class="container">
+        <div class="footer-row row">
+          <div class="col-lg-4 col-sm-6 mb-lg-0 mb-4">
+            <img width="160" src="./images/logo.svg" alt="">
+            <p class="text-secondary lh-24 mt-3"><span class="text-secondary fw-500">LaslesVPN</span> is a private virtual network that has unique features and has high security.</p>
+            <div class="d-flex social-media mt-4">
+              <a class="social-item" href="#!" style="background-image: url('./images/facebook.svg')"></a>
+              <a class="social-item" href="#!" style="background-image: url('./images/twitter.svg')"></a>
+              <a class="social-item" href="#!" style="background-image: url('./images/instagram.svg')"></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 offset-lg-2 mb-lg-0 mb-4">
+            <div class="footer-column">
+              <span class="footer-title">Product</span>
+              <a class="footer-link" href="#!">Download</a>
+              <a class="footer-link" href="#!">Pricing</a>
+              <a class="footer-link" href="#!">Locations</a>
+              <a class="footer-link" href="#!">Server</a>
+              <a class="footer-link" href="#!">Countries</a>
+              <a class="footer-link" href="#!">Blog</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-lg-0 mb-4">
+            <div class="footer-column">
+              <span class="footer-title">Engage</span>
+              <a class="footer-link" href="#!">LaslesVPN</a>
+              <a class="footer-link" href="#!">FAQ</a>
+              <a class="footer-link" href="#!">Tutorials</a>
+              <a class="footer-link" href="#!">About us</a>
+              <a class="footer-link" href="#!">Privacy Policy</a>
+              <a class="footer-link" href="#!">Terms of Service</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-lg-0 mb-4">
+            <div class="footer-column">
+              <span class="footer-title">Earn Money</span>
+              <a class="footer-link" href="#!">Affiliate</a>
+              <a class="footer-link" href="#!">Become Partner</a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4">
+          ©2021 LaslesVPN
+        </div>
+      </div>
+    </footer>
     <div class="upBtn">
       <img src="./images/up-angle.svg" alt="">
     </div>
